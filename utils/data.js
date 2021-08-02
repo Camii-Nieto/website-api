@@ -1,7 +1,7 @@
 const request = require('postman-request');
 
 const getAllDishes = (callback) => {
-    request('https://cami-api-utn.herokuapp.com/dishes/dishes', (error, res, body) => {
+    request('https://cami-api-utn.herokuapp.com/dishes', (error, res, body) => {
         if(error){
           console.log('Error', error)  
           return callback(error, undefined);
